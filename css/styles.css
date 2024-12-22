@@ -1,0 +1,213 @@
+/* 全体スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* ニュースリスト */
+.news-list {
+    margin-top: 20px;
+    /* iOS 6向けに中央揃え */
+    text-align: center;
+}
+
+/* 各ニュースアイテム */
+.news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px auto;  /* 中央揃えのため、marginをautoに設定 */
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h2 {
+    font-size: 1.8rem;
+    color: #2e8b57;
+}
+
+.news-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.news-item a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* レスポンシブデザイン */
+
+/* iPhone 4s 対応 (320px以下) */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .news-item {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .news-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .news-item p {
+        font-size: 1rem;
+    }
+
+    .news-item a {
+        font-size: 1.1rem;
+    }
+}
+
+/* 一般的なスマホ (360px - 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .news-item {
+        width: 85%;
+        padding: 12px;
+    }
+
+    .news-item h2 {
+        font-size: 1.6rem;
+    }
+
+    .news-item p {
+        font-size: 1.1rem;
+    }
+
+    .news-item a {
+        font-size: 1.2rem;
+    }
+}
+
+/* タブレット (768px以上) */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .news-item {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .news-item h2 {
+        font-size: 1.8rem;
+    }
+
+    .news-item p {
+        font-size: 1.2rem;
+    }
+
+    .news-item a {
+        font-size: 1.2rem;
+    }
+}
+
+/* デスクトップ（1024px以上） */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .news-item {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .news-item h2 {
+        font-size: 2rem;
+    }
+
+    .news-item p {
+        font-size: 1.2rem;
+    }
+
+    .news-item a {
+        font-size: 1.3rem;
+    }
+}
