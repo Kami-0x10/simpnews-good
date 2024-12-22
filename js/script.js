@@ -10,7 +10,7 @@ var negativeKeywords = [];
 // 外部のネガティブワード.txtファイルを読み込む関数
 function loadNegativeWords() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '../txt/blacklists.txt', true);  // ネガティブワードのtxtファイルのURLを指定
+    xhr.open('GET', './txt/blacklists.txt', true);  // ネガティブワードのtxtファイルのURLを指定
 
     xhr.onload = function() {
         if (xhr.status === 200) {
